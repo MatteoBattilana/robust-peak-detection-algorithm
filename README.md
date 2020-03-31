@@ -1,6 +1,6 @@
 # Robust peak detection algorithm (using z-scores)
 
-<img src="screenshot/quartz.png" width="640">
+<img src="screenshot/quartz.png" width="800">
 
 Implementation of algorithm from [Robust peak detection algorithm](https://stackoverflow.com/a/22640362) in Python.
 This algorithm has been modified in order to work with real-time streams. It doesn't recalculate all data points on arrival of a new one.
