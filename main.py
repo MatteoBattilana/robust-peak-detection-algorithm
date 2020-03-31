@@ -81,7 +81,7 @@ y = []
 i = open('quartz1', 'r')
 for line in i:
     (yv, xv) = line.split(' ', 1)
-    y.append(abs(float(yv)))
+    y.append(float(yv))
 
 # Run algo with settings from above
 result = init(y, lag=lag, threshold=threshold, influence=influence)
@@ -89,7 +89,7 @@ result = init(y, lag=lag, threshold=threshold, influence=influence)
 i = open('quartz2', 'r')
 for line in i:
     (yv, xv) = line.split(' ', 1)
-    y.append(abs(float(yv)))
+    y.append(float(yv))
     result = add(result, float(yv), lag, threshold, influence)
 
 # Plot result
